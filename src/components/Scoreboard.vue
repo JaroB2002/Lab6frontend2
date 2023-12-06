@@ -13,7 +13,7 @@ let data = ref([{
 let socket = null;
 
 onMounted( () => {
-    socket = new WebSocket('wss://backendsocks.onrender.com/primus');
+    socket = new WebSocket('wss://dev5-lab6-backend.onrender.com/primus');
 
     //listen for new data
     socket.onmessage = function (event) {

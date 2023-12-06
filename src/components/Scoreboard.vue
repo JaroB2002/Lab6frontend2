@@ -13,7 +13,7 @@ let data = ref([{
 let socket = null;
 
 onMounted( () => {
-    socket = new WebSocket('wss://labo6-1fcb.onr0ender.com/primus');
+    socket = new WebSocket('ws://localhost:3000/primus');
 
     //listen for new data
     socket.onmessage = function (event) {

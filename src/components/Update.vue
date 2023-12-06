@@ -9,7 +9,7 @@ let score = ref(null);
 let socket = null;
 
 onMounted(() => {
-    socket = new WebSocket('wss://labo6-1fcb.onrender.com/primus');
+    socket = new WebSocket('ws://localhost:3000/primus');
 });
 
 const updateStats = () => {
